@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seri's Links</title>
+    <style>
+      @font-face {
+        font-weight: 400;
+        src: url(/resources/fonts/JetBrainsMono-Regular.woff2) format("woff");
+        font-family: "JetBrains Mono";
+      }
+
+      @font-face {
+        font-weight: 300;
+        src: url(/resources/fonts/JetBrainsMono-Light.woff2) format("woff");
+        font-family: "JetBrains Mono";
+      }
+
+      @font-face {
+        font-weight: 100;
+        src: url(/resources/fonts/JetBrainsMono-Thin.woff2) format("woff");
+        font-family: "JetBrains Mono";
+      }
+
+      :root {
+        --light: #ffffff;
+        --dark: #1d1c21;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: var(--light);
+        font-weight: 400;
+        font-size: 1rem;
+        font-family: "JetBrains Mono", monospace;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        gap: 32px;
+        background-color: var(--dark);
+        padding: 96px 24px;
+        width: 100dvw;
+        min-height: 100dvh;
+      }
+
+      .top {
+        display: grid;
+        justify-items: center;
+        gap: 1rem;
+      }
+
+      .top .icon-wrapper {
+        height: 96px;
+      }
+
+      .top .icon-wrapper .icon {
+        border-radius: 24px;
+      }
+
+      .top .headers {
+        text-align: center;
+      }
+
+      .top .headers .header {
+        margin-bottom: 4px;
+        font-size: 1.25rem;
+      }
+
+      .top .headers .subheader {
+        font-weight: 100;
+      }
+
+      .quick-anchors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+      }
+
+      .quick-anchors .icon-wrapper {
+        width: 48px;
+        height: 48px;
+      }
+
+      .quick-anchors .quick-anchor .icon {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      .anchors {
+        display: grid;
+        gap: 16px;
+        width: 100%;
+      }
+
+      .anchors .anchor {
+        display: flex;
+        border-radius: 32px;
+        background-color: #ffffff10;
+        width: 100%;
+        height: 64px;
+        overflow: hidden;
+        font-weight: 300;
+        text-decoration: none;
+      }
+
+      .anchors .anchor .text {
+        display: flex;
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+      }
+
+      .anchors .anchor .icon-wrapper {
+        margin-inline: 8px;
+        padding: 16px;
+        height: 100%;
+      }
+
+      .anchors .header {
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
+      }
+
+      .anchors .anchor:hover {
+        background-color: #ffffff20;
+      }
+
+      .icon-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+      }
+
+      .icon-wrapper .icon {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+      }
+
+      @media only screen and (max-width: 400px) {
+        .anchors .anchor .icon-wrapper {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="content">
+      <section class="top">
+        <div class="icon-wrapper">
+          <img class="icon" src="/resources/icon.png" alt="Icon" />
+        </div>
+        <div class="headers">
+          <h1 class="header">GamingSeri</h1>
+          <p class="subheader">Minecraft- & Curiosity-driven</p>
+        </div>
+      </section>
+      <section class="quick-anchors">
+        <a class="icon-wrapper" href="https://www.youtube.com/@gamingseri">
+          <img class="icon" src="/resources/icons/youtube.png" alt="" />
+        </a>
+        <a
+          class="icon-wrapper"
+          href="https://www.instagram.com/theofficialgamingseri"
+        >
+          <img class="icon" src="/resources/icons/instagram.png" alt="" />
+        </a>
+        <a class="icon-wrapper" href="mailto:theofficialgamingseri@gmail.com">
+          <img class="icon" src="/resources/icons/email.png" alt="" />
+        </a>
+      </section>
+      <section class="anchors">
+        <a class="anchor" href="https://steamcommunity.com/id/GamingSeri"
+          ><div class="icon-wrapper">
+            <img class="icon" src="/resources/icons/steam.png" alt="" />
+          </div>
+          <div class="text">Steam</div>
+          <div class="icon-wrapper"></div
+        ></a>
+        <a class="anchor" href="https://www.roblox.com/users/9343452335/profile"
+          ><div class="icon-wrapper">
+            <img class="icon" src="/resources/icons/roblox.png" alt="" />
+          </div>
+          <div class="text">Roblox</div>
+          <div class="icon-wrapper"></div
+        ></a>
+        <h2 class="header">Others</h2>
+        <a class="anchor" href="/theofficialseri/index.html"
+          ><div class="icon-wrapper">
+            <img class="icon" src="/resources/icon.png" alt="" />
+          </div>
+          <div class="text">TheOfficialSeri</div>
+          <div class="icon-wrapper"></div
+        ></a>
+      </section>
+    </main>
+  </body>
+</html>
