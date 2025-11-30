@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+        "mrmlnc.vscode-autoprefixer",
+        "deque-systems.vscode-axe-linter",
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode"
+    ]
+}
